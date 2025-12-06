@@ -40,19 +40,6 @@ DCGNet is a real-time semantic segmentation network designed for urban road scen
 | DCGNet-Lite | Cityscapes | - | - | - |
 | DCGNet-Base | Cityscapes | - | - | - |
 
-### Qualitative Results
-
-<p align="center">
-  <img src="./images/results_cityscapes.png" width="800" alt="Cityscapes Results">
-  <br>
-  <em>Segmentation results on Cityscapes dataset</em>
-</p>
-
-<p align="center">
-  <img src="./images/results_camvid.png" width="800" alt="CamVid Results">
-  <br>
-  <em>Segmentation results on CamVid dataset</em>
-</p>
 
 ## Key Features
 
