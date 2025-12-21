@@ -4,8 +4,7 @@
 
 ## Introduction
 
-DCGNet is a real-time semantic segmentation network designed for urban road scene understanding. It adopts a decoupled dual-branch architecture that separately processes context and detail information, enabling efficient and accurate segmentation results.
-
+DCGNet is a real-time semantic segmentation network designed for urban road scene understanding.
 ![Overall Architecture](figs/overall.png)
 
 ## Overview
@@ -59,7 +58,6 @@ We provide qualitative visualization results to demonstrate the superior perform
 
 - **Multiple Model Variants**: Lite, Base, and Deep versions to balance accuracy and speed.
 - **Real-time Inference**: High-speed processing for practical applications.
-- **Transfer Learning**: Support for ImageNet and Cityscapes pretraining.
 
 ## Installation
 
