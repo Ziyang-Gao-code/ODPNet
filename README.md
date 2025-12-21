@@ -61,10 +61,7 @@ We provide qualitative visualization results to demonstrate the superior perform
 
 ## Installation
 
-```bash
-# Clone the repository
-git clone [https://github.com/Ziyang-Gao-code/DCGNet.git](https://github.com/Ziyang-Gao-code/DCGNet.git)
-cd DCGNet
+
 
 # Install dependencies
 pip install -r requirements.txt
