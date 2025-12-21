@@ -61,7 +61,6 @@ We provide qualitative visualization results to demonstrate the superior perform
 
 ## Installation
 
-
-
+```bash
 # Install dependencies
 pip install -r requirements.txt
