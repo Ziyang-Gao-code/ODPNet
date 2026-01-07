@@ -4,14 +4,14 @@
 
 ## Introduction
 
-DCGNet is a real-time semantic segmentation network designed for urban road scene understanding.
+ODPNet is a real-time semantic segmentation network designed for urban road scene understanding.
 ![Overall Architecture](figs/overall.png)
 
 ## Overview
 
 Balancing segmentation accuracy with inference speed remains a formidable challenge in real-time autonomous driving scenarios. Existing approaches often suffer from the receptive field rigidity of conventional square pooling and the inherent distribution misalignment between semantic and spatial features.
 
-To address these limitations, we propose the **Decoupled Context and Detail-Guided Network (DCGNet)**. Specifically, we introduce the **Atrous Decoupled Pyramid Pooling Module (ADPPM)** to overcome the redundancy of standard pooling operations. Furthermore, to effectively bridge the gap between high-level semantics and fine-grained details, we propose the **Multi-View Aggregation Module (MVAM)**. Utilizing trans-dimensional attention, MVAM harmonizes the heterogeneous representations, ensuring precise feature recalibration.
+To address these limitations, we propose the **Orthogonal Dual-Path Network (ODPNet)**. Specifically, we introduce the **Atrous Decoupled Pyramid Pooling Module (ADPPM)** to overcome the redundancy of standard pooling operations. Furthermore, to effectively bridge the gap between high-level semantics and fine-grained details, we propose the **Multi-View Aggregation Module (MVAM)**. Utilizing trans-dimensional attention, MVAM harmonizes the heterogeneous representations, ensuring precise feature recalibration.
 
 ## Datasets
 
@@ -29,25 +29,25 @@ To address these limitations, we propose the **Decoupled Context and Detail-Guid
 
 | Method | Pretrain | Val (% mIOU) | Test (% mIOU) | FPS (torch) |
 |:---:|:---:|:---:|:---:|:---:|
-| **DCGNet-Lite** | No | 77.6 | 77.4 | 162.1 |
-| **DCGNet-Base** | No | 78.4 | 78.3 | 64.2 |
-| **DCGNet-Deep** | No | 78.9 | 78.8 | 48.2 |
-| **DCGNet-Lite** | ImageNet | **78.9** | **78.7** | **162.1** |
-| **DCGNet-Base** | ImageNet | 79.9 | 79.8 | 64.2 |
-| **DCGNet-Deep** | ImageNet | 80.4 | 80.3 | 48.2 |
+| **ODPNet-Lite** | No | 77.6 | 77.4 | 162.1 |
+| **ODPNet-Base** | No | 78.4 | 78.3 | 64.2 |
+| **ODPNet-Deep** | No | 78.9 | 78.8 | 48.2 |
+| **ODPNet-Lite** | ImageNet | **78.9** | **78.7** | **162.1** |
+| **ODPNet-Base** | ImageNet | 79.9 | 79.8 | 64.2 |
+| **ODPNet-Deep** | ImageNet | 80.4 | 80.3 | 48.2 |
 
 ### CamVid Dataset
 
 | Method | Pretrain | Val (% mIOU) | Test (% mIOU) | FPS (torch) |
 |:---:|:---:|:---:|:---:|:---:|
-| **DCGNet-Lite** | No | - | 72.9 | 208.4 |
-| **DCGNet-Base** | No | - | 74.6 | 152.5 |
-| **DCGNet-Lite** | Cityscapes | - | 80.4 | 208.4 |
-| **DCGNet-Base** | Cityscapes | - | 82.2 | 152.5 |
+| **ODPNet-Lite** | No | - | 72.9 | 208.4 |
+| **ODPNet-Base** | No | - | 74.6 | 152.5 |
+| **ODPNet-Lite** | Cityscapes | - | 80.4 | 208.4 |
+| **ODPNet-Base** | Cityscapes | - | 82.2 | 152.5 |
 
 ## Visualizations
 
-We provide qualitative visualization results to demonstrate the superior performance of **DCGNet** in complex urban driving scenarios.
+We provide qualitative visualization results to demonstrate the superior performance of **ODPNet** in complex urban driving scenarios.
 ### Cityscapes Results
 ![Cityscapes Segmentation](figs/cityscapes_segmentation.png)
 
