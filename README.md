@@ -1,4 +1,4 @@
-# DCGNet: Decoupled Context and Detail-Guided Network for Real-Time Semantic Segmentation of Urban Road Scenes
+# ODPNet: Orthogonal Dual-Path Network for Real-Time Semantic Segmentation of Urban Road Scenes
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
