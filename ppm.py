@@ -104,9 +104,9 @@ class ADPPM(nn.Module):
         return out
 
 
-class ADPPM+(nn.Module):
+class ADPPM_Plus(nn.Module):
     def __init__(self, inplanes, branch_planes, outplanes, BatchNorm=nn.BatchNorm2d):
-        super(ADPPM, self).__init__()
+        super(ADPPM_Plus, self).__init__()
         bn_mom = 0.1
 
         self.scale1 = nn.Sequential(
@@ -199,6 +199,7 @@ class ADPPM+(nn.Module):
 
         out = self.compression(torch.cat(x_list, 1)) + self.shortcut(x)
         return out
+
 
 
 
