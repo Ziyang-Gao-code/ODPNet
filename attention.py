@@ -36,7 +36,7 @@ class ChannelAttention(nn.Module):
         return x * channel_attention.expand_as(x)
 
 
-class TripletAttention(nn.Module):
+class CDIB(nn.Module):
     """Triplet Attention Module
     
     Captures cross-dimension interactions by computing attention across three branches:
@@ -55,7 +55,7 @@ class TripletAttention(nn.Module):
         - Output: (B, C, H, W)
         
     Examples:
-        >>> attention = TripletAttention(gate_channels=64, reduction_ratio=16)
+        >>> attention = CDIB(gate_channels=64, reduction_ratio=16)
         >>> x = torch.randn(2, 64, 32, 32)
         >>> out = attention(x)
         >>> print(out.shape)
@@ -63,7 +63,7 @@ class TripletAttention(nn.Module):
     """
     
     def __init__(self, gate_channels, reduction_ratio=16):
-        super(TripletAttention, self).__init__()
+        super(CDIB, self).__init__()
         
         # H dimension channel attention
         self.ChannelGateH = nn.Sequential(
