@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 
-class SE_Block(nn.Module):
+class ChannelAttention(nn.Module):
     """Squeeze-and-Excitation Block
     
     Args:
@@ -11,7 +11,7 @@ class SE_Block(nn.Module):
     """
     
     def __init__(self, inchannel, reduction_ratio=16):
-        super(SE_Block, self).__init__()
+        super(ChannelAttention, self).__init__()
         self.gap = nn.AdaptiveAvgPool2d((1, 1))
         
         reduced_channels = inchannel // reduction_ratio
@@ -86,7 +86,7 @@ class TripletAttention(nn.Module):
         )
         
         # Spatial attention using SE block
-        self.SpatialGate = SE_Block(gate_channels, reduction_ratio=16)
+        self.SpatialGate = ChannelAttention(gate_channels, reduction_ratio=16)
     
     def forward(self, x):
         """
