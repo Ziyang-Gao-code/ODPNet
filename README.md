@@ -49,10 +49,10 @@ To address these limitations, we propose the **Orthogonal Dual-Path Network (ODP
 
 We provide qualitative visualization results to demonstrate the superior performance of **ODPNet** in complex urban driving scenarios.
 ### Cityscapes Results
-![Cityscapes Segmentation](figs/cityscapes_segmentation.png)
+
 
 ### CamVid Results
-![CamVid Segmentation](figs/camvid_segmentation.png)
+
 
 ## Key Features
 
