@@ -69,7 +69,7 @@ class ADPPM(nn.Module):
             nn.Conv2d(branch_planes, branch_planes, kernel_size=3, padding=1, bias=False),
         )
 
-        # compression和shortcut保持不变
+
         self.compression = nn.Sequential(
             BatchNorm(branch_planes * 5, momentum=bn_mom),
             nn.ReLU(inplace=True),
@@ -199,6 +199,7 @@ class ADPPM_Plus(nn.Module):
 
         out = self.compression(torch.cat(x_list, 1)) + self.shortcut(x)
         return out
+
 
 
 
