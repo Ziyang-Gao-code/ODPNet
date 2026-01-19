@@ -3,7 +3,6 @@ import torch.nn as nn
 
 
 class ChannelAttention(nn.Module):
-    """Squeeze-and-Excitation Block
     
     Args:
         inchannel (int): Number of input channels
@@ -37,7 +36,6 @@ class ChannelAttention(nn.Module):
 
 
 class CDIB(nn.Module):
-    """Triplet Attention Module
     
     Captures cross-dimension interactions by computing attention across three branches:
     1. Channel attention along Height dimension (C-H interaction)
